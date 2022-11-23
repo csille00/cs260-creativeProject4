@@ -1,0 +1,21 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "addTeacher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mtucourses/rate-my-professors": "^2.2.0",
+    "body": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.7.3",
+    "parser": "^0.1.4"
+  }
+}
