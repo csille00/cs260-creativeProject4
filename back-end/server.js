@@ -1,13 +1,15 @@
 const express = require('express')
-const bodyParse = require('body-parser')
+const bodyParser = require('body-parser')
 const ratings = require('@mtucourses/rate-my-professors').default
 const mongoose = require("mongoose");
 const { stringify } = require("querystring");
 
 const app = express()
 app.use(express.static('public'))
-app.use(bodyParse.json())
-app.use(bodyParse.urlencoded({extended:false}))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Access-Control-Allow-Methods", "POST, GET, DELETE")
