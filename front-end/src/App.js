@@ -120,6 +120,10 @@ function App() {
           </div>
         </div>
       ))}     
+      <div className="footer">
+        <a href="https://github.com/csille00/cs260-creativeProject4">Git Hub</a>
+        <p>Garett Whimple and Connor Ellis pair programmed this project</p>
+      </div>
     </div>
   );
 }
